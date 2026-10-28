@@ -49,8 +49,8 @@ Inside this repository itself, `npm start` is the same thing.
 Both people, on their own machine:
 
 ```sh
-git clone git@github.com:llama1337-oss/shared-repo.git
-cd shared-repo
+git clone <url of the repo you two share>
+cd <repo>
 pairsync
 ```
 
