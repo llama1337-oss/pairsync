@@ -1,0 +1,21 @@
+{
+  "name": "pairsync",
+  "version": "0.1.0",
+  "description": "Continuously syncs two clones of one git repo through a shared remote: commits local edits, merges (never rebases) the other side's work, and pushes, without ever destroying anyone's work.",
+  "type": "module",
+  "bin": {
+    "pairsync": "./bin/pairsync.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "scripts": {
+    "start": "node bin/pairsync.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

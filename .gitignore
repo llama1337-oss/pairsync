@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Machine-local daemon runtime state: never shared between machines.
+.pairsync/
+
+# NOT ignored on purpose: .pairsync-shared/<hostname>.json is TRACKED and
+# committed by each machine to announce recently edited files, so each side
+# can warn when both people touch the same file. Ignoring it would silently
+# break that warning. Do not "tidy" this away.
+!.pairsync-shared/
+
+# Environment / secrets
+.env
+.env.*
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS / editor cruft
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
